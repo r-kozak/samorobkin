@@ -42,7 +42,7 @@ object CharacterGenerator {
 }
 
 /**
- * It`s recomended to run server before invoking this function.
+ * It`s recommended to run server before invoking this function.
  */
 suspend fun fetchCharacterData(): CharacterGenerator.CharacterData? {
     return withContext(Dispatchers.IO) {

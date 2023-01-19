@@ -23,8 +23,7 @@ class NewCharacterActivity : AppCompatActivity() {
         characterData = savedInstanceState?.characterData ?: CharacterGenerator.generate()
 
         binding = ActivityNewCharacterBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         displayCharacterData()
 
